@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pick a Dog - Cool Things to Do on School Wifi!</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="img/logo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=K2D|Mali" rel="stylesheet">
+  <script>
+  var dog;
+
+  function pickDog() {
+      dog = Math.floor(3 * Math.random());
+  }
+
+  function play(n){
+    if (n == dog) {
+       var audio = document.getElementById("audio1");
+    }
+    else
+    {
+      var audio = document.getElementById("audio2");
+    }
+
+    audio.play();
+   }
+   </script>
+</head>
+
+<body onload="pickDog()">
+
+  <nav>
+    <h1> Cool Things To Do on School Wifi - Pick a Dog </h1>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pong.html">Play Pong</a></li>
+      <li><a href="sans.html">Sans Simulator</a></li>
+      <li><a href="pickdog.html">Guess a Dog</a></li>
+      <li><a href="loading.html">Loading...</a></li>
+    </ul>
+  </nav>
+
+  <h2>Click on The Correct Dog.</h2>
+  <img src="img/dog.jpg" value="PLAY" onclick="play(0)">
+  <img src="img/dog.jpg" value="PLAY" onclick="play(1)">
+  <img src="img/dog.jpg" value="PLAY" onclick="play(2)">
+
+  <audio id="audio1" src="music/dogbark.ogg"></audio>
+  <audio id="audio2" src="music/eardead.ogg"></audio>
+
+  <footer>
+    <h2>Made by: Jaden Heinle</h2>
+  </footer>
+
+  <embed name="theme" src="music/chicken.mp3" loop="true" hidden="true" autostart="true">
+
+  </body>
+</html>
