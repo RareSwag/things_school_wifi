@@ -1,2 +1,2 @@
-# Pong-Tug_Of_War
-First real try at making a game with js
+# Fun Things To Do In School Wifi!!
+This is epic
