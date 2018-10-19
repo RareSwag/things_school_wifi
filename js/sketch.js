@@ -69,9 +69,9 @@ function makeBall(){
 
 function moveRightBars(){
   //Move Bars
-  if (keyIsDown(UP_ARROW)){
+  if (keyIsDown(73)){
     verticalr = verticalr - 4;
-  } else if (keyIsDown(DOWN_ARROW)){
+  } else if (keyIsDown(75)){
       verticalr = verticalr + 4;
     }
   //Bars can't go offscreen
